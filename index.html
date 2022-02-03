@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image" href="img/jj.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Restaurant Menu </title>
+</head>
+<body>
+   <nav class="navbar">
+      <div class="logo">Restaurant</div>
+          <ul class="nav-links">
+            <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                 <div class="menu">
+                    <li><a href="C:\Users\Swapnil Patil\OneDrive\Desktop\HTML\TCR_Assignment_1\video.html">Watch Video</a></li>
+                    <li><a href="/">About</a></li>
+                    <li class="services">
+                      <a href="/">Menu Pages</a>
+                          <ul class="dropdown">
+                            <li><a href="/">Menu 1 </a></li>
+                            <li><a href="/">Menu 2 </a></li>
+                            <li><a href="/">Menu 2 </a></li>
+                            <li><a href="/">Menu 3 </a></li>
+                            <li><a href="/">Menu 4 </a></li>
+                          </ul>
+                    </li>
+                     <button class="button" href="#">Buy Now</button>
+                </div>
+          </ul>
+   </nav>
+	<center>
+		<h1><b><em>Western Restaurant</em></b></h1>
+        <h2><b>Menu</b></h2>
+
+        <div class="container">
+          <img class="img" src="img/download.jpg" alt="Pasta Food">
+          <img class="img1" src="img/images.jpg" alt="Pasta Food">
+        </div>
+           <p class="text">Which is the tastiest food? </p>
+           <p class="para">The world's most delicious food is not Massaman curry, as we suggested, but a meaty, spicy,<br>
+           gingery dish from west Sumatra."There is no love sincerer than the love of food," George Bernard<br>
+          Shaw said. Judging by the number of amazing dishes out there, he was right.</p>
+          <button class="btn">Read More</button>
+    </center>
+           <div class="container1">
+                <h1>Regsitration Form</h1>
+                <hr>
+              <form action="/action_page.php">
+                   <fieldset style="border-width: 5px; border: 2px solid blue;">
+                	  <legend style="color: black; font-family: fantasy;">Name</legend>
+                	  <label>First Name &nbsp;<input id="fname" type="text" placeholder="Enter your First Name"></label>
+                	  <br>
+                	  <label>Last Name  &nbsp; <input type="text" placeholder="Enter you Last Name"></label>
+                	  <br>
+                   </fieldset>
+                   <fieldset style="border-width:5px; border:2px solid brown;">
+                    	<legend style="color:black; font-family:fantasy;">Address</legend>
+                	    <label>Street Address1 &nbsp;&nbsp; <input type="textarea" name="textarea"></label>
+                	    <br>
+                	    <label>Street Address2 &nbsp; <input type="textarea" name="textarea"></label>
+                	    <br>
+                	    <label>City &nbsp;
+                	    	<select>
+                			  <option value="Chennai">Chennai</option>
+                			  <option value="Mumbai">Mumbai</option>
+                			  <option value="Thane">Thane</option>
+                			  <option value="Kolhapur">Kolhapur</option>
+                			  <option value="Pune">Pune</option>
+                		    </select>
+                	    </label>
+                	    <label>State &nbsp; 
+                         <select>
+                         	<option value="Maharashtra">Maharashtra</option>
+                         	<option value="Punjab">Punjab</option>
+                         	<option value="Gujarat">Gujarat</option>
+                         	<option value="kerala">Kerala</option>
+                         	<option value="Haryana">Haryana</option>
+                         </select>
+                	    </label>
+                	    <br>
+                	    <label> Pincode &nbsp; <input type="text" name="pin" pattern="{0-9) {6}" maxlength="6" placeholder="Enter pincode"></label>
+                    </fieldset>
+                    <fieldset style="border-width:5px; border:2px solid darkorange;">
+                	   <legend style="color:black;font-family: fantasy;">Self Details</legend>
+                	   <label>Email &nbsp; <input type="email" name="email" placeholder="Enter your Email"></label>
+                	   <label>Password &nbsp; <input type="password" name="Password" pattern="{0-9} {8}" maxlength="8" placeholder="Enter your password"></label>
+                	   <br>
+                	   <label>Phone No &nbsp; <input type="text" name="Number" pattern="{0-9} {10}" maxlength="10" placeholder="91+"></label>
+                   </fieldset>
+                   <fieldset style="border-width:5px; border:2px solid red;">
+                	  <legend style="color:black; font-family:fantasy;">Booking Details</legend>
+                	  <label>Check-In-Date &nbsp; <input type="date" name="Date"></label>
+                	  <label>Check-Out-Date &nbsp; <input type="date" name="Date"></label>
+                	  <br>
+                	  <label>Guest &nbsp; <input type="number" name="Number" pattern="{0-100}" placeholder="Ex-1,2,3.."></label>
+                   </fieldset>
+                   <fieldset style="border-width:5px; border:2px solid darkolivegreen;">
+                      <legend style="color:black; font-family: fantasy;">Submit</legend>
+                      <button class="registerbtn"><label> &nbsp; <input type="Submit" name=""></label></button>&nbsp;
+                      <button class="registerbtn"><label> &nbsp; <input type="Reset" name=""></label></button>
+                   </fieldset>
+               </form>
+           </div>
+              <h1 class="about"><b>Follow</b></h1>
+              <a href="#" class="fa fa-facebook"></a>
+              <a href="#" class="fa fa-twitter"></a>
+              <a href="#" class="fa fa-youtube"></a>
+              <h2 class="address">Address</h2>
+              <p class="contact"> Navi Mumbai Maharashtra
+               India
+              4000701</p>
+              <h3 class="us">Contact US</h3>
+              <p class="bt">Email: support@absrise.com <br> Phone:2321334355</p>
+                <ul class="time">
+                   <legend style="color:white; font-family: cursive; font-size: x-large;">Opening Time</legend>
+                   <li>Monday 11:00AM - 8:00PM</li>
+                   <li>Tuesday 11:00AM - 8:00PM</li>
+                   <li>Wednesday 11:00AM - 8:00PM</li>
+                   <li>Thursday 11:00AM - 8:00PM</li>
+                   <li>Friday 11:00AM - 8:00PM</li>
+                   <li>Saturday 11:00AM - 8:00PM</li>
+                   <li>Sunday is Holiday</li>
+                </ul>
+   <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

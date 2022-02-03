@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #424949;
+	font-size: medium;
+	font-style: oblique;
+	font-weight: 400;
+	line-height: 1.5;
+	color: blue;
+	font-family: 'Acme', sans-serif;
+	height: 100%;
+	width: 100%;
+    
+}
+h1 {
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+h2 {
+  color: yellow;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.container{
+width: 800px;
+height: 150px;
+background-color: red;
+border: 1px solid black;
+position: absolute;
+text-align: center;
+bottom: 40%;
+left: 200px;
+}
+.img{
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	position: absolute;
+	top: -20%;
+	right: 65px;
+}
+.img1{
+	width: 300px;
+	height: 200px;
+	text-align: center;
+	position: absolute;
+	top: -20%;
+	left: 70px;
+}
+.text{
+	font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+.para{
+	font-size: 18px;
+	font-family: 'Balsamiq Sans', cursive;
+	text-align: center;
+	color: white;
+	font-style: normal;
+	position: absolute;
+	bottom: 5%;
+	left: 20%;
+}
+.btn{
+	width: 200px;
+	padding: 15px 20px;
+	border: 1px solid black;
+	background-color: red;
+	border-radius: 30px;
+	text-align: center;
+	color: red;
+    font-family: 'Luxurious Roman', cursive;
+    position: fixed;
+    bottom: -0%;
+    left: 39%;
+    color: white;
+    cursor: pointer;
+}
+.container1{
+	width: 500px;
+	height: 1450px;
+	background-color: #FFDF79;
+	color: black;
+	text-align: center;
+	position: absolute;
+	top: 110%;
+	left: 700px;
+	border-radius: 30px;
+}
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 5px;
+ background-color: teal;
+ color: #fff;
+}
+.nav-links a {
+ color: #fff;
+}
+.logo {
+ font-size: 32px;
+}
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.menu li:hover {
+ background-color: #4c9e9e;
+ border-radius: 5px;
+ transition: 0.3s ease;
+}
+.menu li {
+ padding: 5px 14px;
+}
+.services {
+ position: relative; 
+}
+.dropdown {
+ background-color: rgb(1, 139, 139);
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ top: 35px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.dropdown li {
+ padding: 0.5em 1em;
+ width: 8em;
+ text-align: center;
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+.services:hover .dropdown {
+ display: block;
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+input[type=checkbox]{
+ display: none;
+} 
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:teal;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#4c9e9e;
+ transition: 0.3s ease;
+}
+.menu li + li {
+ margin-top: 12px;
+}
+input[type=checkbox]:checked ~ .menu{
+ display: block;
+}
+.hamburger {
+ display: block;
+}
+.dropdown {
+ left: 50%;
+ top: 30px;
+ transform: translateX(35%);
+}
+.dropdown li:hover {
+ background-color: #4c9e9e;
+}
+}
+.button{
+	width: 150px;
+	padding: 15px 20px;
+	border: 2px solid black;
+	background-color: white;
+	color: black;
+	font-family:'Acme', sans-serif ;
+	cursor: pointer;
+	font-size: 13px;
+}
+.about{
+	position: absolute;
+	bottom: -25%;
+	left: 80px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  position: absolute;
+  bottom: -38%;
+  border-radius: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+  left: 100px;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+  left: 40px;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  left: 160px;
+}
+.address{
+	position: absolute;
+	bottom: -45%;
+	left: 80px;
+}
+.contact{
+	position: absolute;
+	bottom: -51%;
+	left: 20px;
+	font-size: 20px;
+	font-style: oblique;
+	font-family:'Luxurious Roman', cursive ;
+	color: white;
+}
+.us{
+	position: absolute;
+	bottom: -58%;
+	left: 80px;
+	font-family:'Luxurious Roman', cursive ;
+	text-shadow:1px 1px 2px black, 0 0 25px red, 0 0 5px darkred;
+	color:white ;
+	font-size: 20px;
+}
+.bt{
+	position: absolute;
+	bottom: -66%;
+	left: 60px;
+	font-family: sans-serif;
+	color: white;
+}
+.time{
+	position: absolute;
+	bottom: -110%;
+	text-align: center;
+	left: 60px;
+	font-family: sans-serif;
+	color: white;
+}
+input[type=text], input[type=password], input[type=textarea], input[type=number], input[type=date],input[type=email] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
